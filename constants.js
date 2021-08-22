@@ -8,7 +8,11 @@ const mapping = {
   s: 'Move: down',
   a: 'Move: left',
   d: 'Move: right',
-  x: 'y'
+  x: 'y',
+  u: 'Say: I will beat you!',
+  i: 'Say: You are under arrested!',
+  o: 'Say: Bye Bey',
+  p: 'Say: Good Luck'
 }
 
 module.exports = {

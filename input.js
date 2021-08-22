@@ -1,4 +1,5 @@
 let connection;
+const { mapping } = require('./constants');
 
 const setupInput = function(conn) {
 
@@ -13,24 +14,16 @@ const setupInput = function(conn) {
       if (key === '\u0003') {
         process.exit();
       }
-      if (key === 'w') {
-        connection.write('Move: up');
+      for (k in mapping) {
+        if (key === k) {
+          connection.write(mapping[k]);
+        }
       }
-      if (key === 'a') {
-        connection.write('Move: left');
-      }
-      if (key === 's') {
-        connection.write('Move: down');
-      }
-      if (key === 'd') {
-        connection.write('Move: right');
-      }
-      connection.write(`Say: ${key}`)
+      // connection.write(`Say: ${key}`)
     })
   }
   handleUserInput();
   return stdin;
 }
-setupInput();
 
 module.exports = {setupInput};

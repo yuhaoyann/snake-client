@@ -20,7 +20,7 @@ Before you can run this client, you will need to be running the server side whic
   - keep the terminal `running` while playing
   - take note of the `IP` and `PORT` on the top left
 - Player setup
-  - Open another terminal windoe
+  - Open another terminal window
   - Go to [snake-client](https://github.com/yuhaoyann/snake-client), clone the repo to local
   - Open `constants.js` and change the `IP` and `PORT` to what you noted above
   - cd into the repository and type `npm play [your name]` to play, swith `[your name]` with your initials
